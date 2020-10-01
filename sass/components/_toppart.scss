@@ -1,0 +1,48 @@
+.toppart {
+  display: flex;
+  height: 66.6666vh;
+  width: 100vw;
+
+  &__slideshow {
+    background-image: url('/images/desktop-image-hero-1.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 0 0 55vw;
+  }
+
+  &__buttons {
+    position: absolute;
+    display: flex;
+    height: 6rem;
+    width: 13rem;
+    background-color: $black;
+    align-self: flex-end;
+    left: 55vw;
+  }
+
+  &__icon {
+    display: flex;
+    flex: 0 0 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    margin: auto;
+    width: 30vw;
+  }
+
+  &__shop {
+    display: flex;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    color: $black;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1rem;
+
+    & p {
+      margin-right: 1.4rem;
+    }
+  }
+}

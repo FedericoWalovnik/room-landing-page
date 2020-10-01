@@ -1,13 +1,77 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
 
 html {
   font-size: 62.5%;
   font-family: 'Spartan', sans-serif;
-  font-weight: 500;
-  font-size: 1.2rem; }
+  font-weight: 500; }
 
 body {
-  background-color: white; }
+  background-color: white;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  color: #a1a1a1; }
+
+.title {
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: black; }
+
+.paragraph {
+  margin-top: 2rem;
+  line-height: 1.8rem; }
+
+.nav {
+  color: white;
+  width: 33.3333vw;
+  position: absolute; }
+  .nav__bar {
+    display: flex;
+    list-style: none;
+    margin: 6rem 5rem;
+    justify-content: space-between; }
+  .nav__logo {
+    height: 1.4rem;
+    width: auto;
+    margin-right: 1.5rem; }
+  .nav__link:link, .nav__link:active, .nav__link:visited {
+    color: white;
+    text-decoration: none; }
+
+.toppart {
+  display: flex;
+  height: 66.6666vh;
+  width: 100vw; }
+  .toppart__slideshow {
+    background-image: url("/images/desktop-image-hero-1.jpg");
+    background-size: cover;
+    background-position: center;
+    flex: 0 0 55vw; }
+  .toppart__buttons {
+    position: absolute;
+    display: flex;
+    height: 6rem;
+    width: 13rem;
+    background-color: black;
+    align-self: flex-end;
+    left: 55vw; }
+  .toppart__icon {
+    display: flex;
+    flex: 0 0 50%;
+    align-items: center;
+    justify-content: center; }
+  .toppart__text {
+    margin: auto;
+    width: 30vw; }
+  .toppart__shop {
+    display: flex;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1rem; }
+    .toppart__shop p {
+      margin-right: 1.4rem; }

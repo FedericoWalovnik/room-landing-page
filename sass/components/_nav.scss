@@ -1,0 +1,28 @@
+.nav {
+  color: $white;
+  width: 33.3333vw;
+  position: absolute;
+
+  &__bar {
+    display: flex;
+    list-style: none;
+    margin: 6rem 5rem;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    height: 1.4rem;
+    width: auto;
+    margin-right: 1.5rem;
+  }
+
+  &__link:link,
+  &__link:active,
+  &__link:visited {
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__item {
+  }
+}
