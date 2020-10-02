@@ -7,7 +7,7 @@
     background-image: url('/images/desktop-image-hero-1.jpg');
     background-size: cover;
     background-position: center;
-    flex: 0 0 55vw;
+    flex: 0 0 60vw;
   }
 
   &__buttons {
@@ -17,7 +17,7 @@
     width: 13rem;
     background-color: $black;
     align-self: flex-end;
-    left: 55vw;
+    left: 60vw;
   }
 
   &__icon {
@@ -34,7 +34,7 @@
 
   &__shop {
     display: flex;
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-transform: uppercase;
     color: $black;
     font-size: 1rem;
@@ -44,5 +44,9 @@
     & p {
       margin-right: 1.4rem;
     }
+  }
+
+  &__item {
+    align-self: center;
   }
 }

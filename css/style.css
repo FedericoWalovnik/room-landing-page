@@ -1,7 +1,14 @@
+.margin-top-medium {
+  margin-top: 2rem; }
+
+.margin-top-small {
+  margin-top: 1rem; }
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  overflow-y: hidden; }
 
 html {
   font-size: 62.5%;
@@ -12,26 +19,35 @@ body {
   background-color: white;
   box-sizing: border-box;
   font-size: 1.2rem;
+  line-height: 1.8rem;
   color: #a1a1a1; }
 
 .title {
   font-weight: 700;
   font-size: 3.2rem;
+  line-height: 3.5rem;
   color: black; }
 
-.paragraph {
-  margin-top: 2rem;
-  line-height: 1.8rem; }
+.subtitule {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.6rem;
+  font-weight: 700;
+  color: black; }
 
 .nav {
+  display: flex;
   color: white;
   width: 33.3333vw;
-  position: absolute; }
+  height: 15vh;
+  position: absolute;
+  flex-grow: 1; }
   .nav__bar {
     display: flex;
     list-style: none;
-    margin: 6rem 5rem;
-    justify-content: space-between; }
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%; }
   .nav__logo {
     height: 1.4rem;
     width: auto;
@@ -48,7 +64,7 @@ body {
     background-image: url("/images/desktop-image-hero-1.jpg");
     background-size: cover;
     background-position: center;
-    flex: 0 0 55vw; }
+    flex: 0 0 60vw; }
   .toppart__buttons {
     position: absolute;
     display: flex;
@@ -56,7 +72,7 @@ body {
     width: 13rem;
     background-color: black;
     align-self: flex-end;
-    left: 55vw; }
+    left: 60vw; }
   .toppart__icon {
     display: flex;
     flex: 0 0 50%;
@@ -67,7 +83,7 @@ body {
     width: 30vw; }
   .toppart__shop {
     display: flex;
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-transform: uppercase;
     color: black;
     font-size: 1rem;
@@ -75,3 +91,23 @@ body {
     letter-spacing: 1rem; }
     .toppart__shop p {
       margin-right: 1.4rem; }
+  .toppart__item {
+    align-self: center; }
+
+.bottompart {
+  display: flex;
+  height: 33.33333vh; }
+  .bottompart__firstimage {
+    background-image: url("/images/image-about-dark.jpg");
+    flex: 0 0 30vw;
+    background-size: cover;
+    background-position: center; }
+  .bottompart__textblock {
+    padding: 6rem 4rem;
+    align-self: center;
+    justify-self: center; }
+  .bottompart__secondimage {
+    background-image: url("/images/image-about-light.jpg");
+    flex: 0 0 30vw;
+    background-size: cover;
+    background-position: center; }

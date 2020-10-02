@@ -1,10 +1,14 @@
 .title {
   font-weight: 700;
   font-size: 3.2rem;
+  line-height: 3.5rem;
   color: $black;
 }
 
-.paragraph {
-  margin-top: 2rem;
-  line-height: 1.8rem;
+.subtitule {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.6rem;
+  font-weight: 700;
+  color: $black;
 }

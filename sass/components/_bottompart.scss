@@ -1,0 +1,24 @@
+.bottompart {
+  display: flex;
+  height: 33.33333vh;
+
+  &__firstimage {
+    background-image: url('/images/image-about-dark.jpg');
+    flex: 0 0 30vw;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__textblock {
+    padding: 6rem 4rem;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &__secondimage {
+    background-image: url('/images/image-about-light.jpg');
+    flex: 0 0 30vw;
+    background-size: cover;
+    background-position: center;
+  }
+}
