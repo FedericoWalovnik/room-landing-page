@@ -6,6 +6,10 @@
   position: absolute;
   flex-grow: 1;
 
+  @include respond(tab-port) {
+    width: 100vw;
+  }
+
   &__bar {
     display: flex;
     list-style: none;

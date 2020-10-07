@@ -3,11 +3,21 @@
   height: 66.6666vh;
   width: 100vw;
 
+  @include respond(tab-port) {
+    flex-direction: column;
+    height: 90vh;
+  }
+
   &__slideshow {
     background-image: url('/images/desktop-image-hero-1.jpg');
     background-size: cover;
     background-position: center;
     flex: 0 0 60vw;
+
+    @include respond(tab-port) {
+      background-image: url('/images/mobile-image-hero-1.jpg');
+      flex: 0 0 50vh;
+    }
   }
 
   &__buttons {
@@ -17,7 +27,14 @@
     width: 13rem;
     background-color: $black;
     align-self: flex-end;
-    left: 60vw;
+    right: 30vw;
+    cursor: pointer;
+
+    @include respond(tab-port) {
+      flex: 0 0 45vh;
+      right: 0vw;
+      top: calc(50vh - 6rem);
+    }
   }
 
   &__icon {
@@ -30,6 +47,10 @@
   &__text {
     margin: auto;
     width: 30vw;
+
+    @include respond(tab-port) {
+      width: 80vw;
+    }
   }
 
   &__shop {

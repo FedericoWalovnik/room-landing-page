@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <script src="./js/index.js"></script>
     <link rel="stylesheet" href="/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap"
@@ -37,18 +38,18 @@
       </ul>
     </nav>
     <section class="toppart">
-      <div class="toppart__slideshow"></div>
+      <div class="toppart__slideshow" id="slideshow"></div>
       <div class="toppart__buttons">
-        <div class="toppart__icon">
+        <div class="toppart__icon" id="previous">
           <img src="images/icon-angle-left.svg" alt="previous" />
         </div>
-        <div class="toppart__icon">
+        <div class="toppart__icon" id="next">
           <img src="images/icon-angle-right.svg" alt="next" />
         </div>
       </div>
       <div class="toppart__text">
-        <h1 class="title">Discover innovative ways to decorate</h1>
-        <p class="paragraph margin-top-medium">
+        <h1 class="title" id="title">Discover innovative ways to decorate</h1>
+        <p class="paragraph margin-top-medium" id="paragraph">
           We provide unmatched quality, comfort, and style for property owners
           across the country. Our experts combine formandn function in bringing
           your vision to life. Create a room in your own style with our
@@ -68,7 +69,7 @@
       </div>
     </section>
     <section class="bottompart">
-      <div class="bottompart__firstimage"></div>
+      <div class="bottompart__image bottompart__firstimage"></div>
       <div class="bottompart__textblock">
         <h2 class="subtitule">About our furniture</h2>
         <p class="paragraph margin-top-small">
@@ -80,7 +81,7 @@
           dream space.
         </p>
       </div>
-      <div class="bottompart__secondimage"></div>
+      <div class="bottompart__image bottompart__secondimage"></div>
     </section>
 
     <!--

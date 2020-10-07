@@ -2,13 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 html {
   font-size: 62.5%;
   font-family: 'Spartan', sans-serif;
   font-weight: 500;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 45%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 body {

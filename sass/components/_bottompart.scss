@@ -1,24 +1,42 @@
 .bottompart {
   display: flex;
   height: 33.33333vh;
+  overflow-y: hidden;
 
-  &__firstimage {
-    background-image: url('/images/image-about-dark.jpg');
+  @include respond(tab-port) {
+    overflow-y: scroll;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  &__image {
     flex: 0 0 30vw;
     background-size: cover;
     background-position: center;
+
+    @include respond(tab-port) {
+      flex: 0 0 55vw;
+    }
+  }
+
+  &__firstimage {
+    background-image: url('/images/image-about-dark.jpg');
   }
 
   &__textblock {
     padding: 6rem 4rem;
     align-self: center;
     justify-self: center;
+
+    @include respond(tab-port) {
+      flex: 0 0 65vw;
+      width: 80vw;
+      padding: 6rem 0;
+      margin: auto 0;
+    }
   }
 
   &__secondimage {
     background-image: url('/images/image-about-light.jpg');
-    flex: 0 0 30vw;
-    background-size: cover;
-    background-position: center;
   }
 }

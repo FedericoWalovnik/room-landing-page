@@ -4,16 +4,40 @@
 .margin-top-small {
   margin-top: 1rem; }
 
+/*
+0 - 600px:      phone
+600 - 900px:    tablet portrait
+900 - 1200px:   tablet landscape
+1200 - 1800px:  normal style
+1800px +:       Big desktop
+
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  overflow-y: hidden; }
+  overflow-x: hidden; }
 
 html {
   font-size: 62.5%;
   font-family: 'Spartan', sans-serif;
   font-weight: 500; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   background-color: white;
@@ -42,6 +66,9 @@ body {
   height: 15vh;
   position: absolute;
   flex-grow: 1; }
+  @media only screen and (max-width: 56.25em) {
+    .nav {
+      width: 100vw; } }
   .nav__bar {
     display: flex;
     list-style: none;
@@ -60,11 +87,19 @@ body {
   display: flex;
   height: 66.6666vh;
   width: 100vw; }
+  @media only screen and (max-width: 56.25em) {
+    .toppart {
+      flex-direction: column;
+      height: 90vh; } }
   .toppart__slideshow {
     background-image: url("/images/desktop-image-hero-1.jpg");
     background-size: cover;
     background-position: center;
     flex: 0 0 60vw; }
+    @media only screen and (max-width: 56.25em) {
+      .toppart__slideshow {
+        background-image: url("/images/mobile-image-hero-1.jpg");
+        flex: 0 0 50vh; } }
   .toppart__buttons {
     position: absolute;
     display: flex;
@@ -72,7 +107,13 @@ body {
     width: 13rem;
     background-color: black;
     align-self: flex-end;
-    left: 60vw; }
+    right: 30vw;
+    cursor: pointer; }
+    @media only screen and (max-width: 56.25em) {
+      .toppart__buttons {
+        flex: 0 0 45vh;
+        right: 0vw;
+        top: calc(50vh - 6rem); } }
   .toppart__icon {
     display: flex;
     flex: 0 0 50%;
@@ -81,6 +122,9 @@ body {
   .toppart__text {
     margin: auto;
     width: 30vw; }
+    @media only screen and (max-width: 56.25em) {
+      .toppart__text {
+        width: 80vw; } }
   .toppart__shop {
     display: flex;
     margin-top: 2rem;
@@ -96,18 +140,31 @@ body {
 
 .bottompart {
   display: flex;
-  height: 33.33333vh; }
-  .bottompart__firstimage {
-    background-image: url("/images/image-about-dark.jpg");
+  height: 33.33333vh;
+  overflow-y: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .bottompart {
+      overflow-y: scroll;
+      flex-direction: column;
+      height: fit-content; } }
+  .bottompart__image {
     flex: 0 0 30vw;
     background-size: cover;
     background-position: center; }
+    @media only screen and (max-width: 56.25em) {
+      .bottompart__image {
+        flex: 0 0 55vw; } }
+  .bottompart__firstimage {
+    background-image: url("/images/image-about-dark.jpg"); }
   .bottompart__textblock {
     padding: 6rem 4rem;
     align-self: center;
     justify-self: center; }
+    @media only screen and (max-width: 56.25em) {
+      .bottompart__textblock {
+        flex: 0 0 65vw;
+        width: 80vw;
+        padding: 6rem 0;
+        margin: auto 0; } }
   .bottompart__secondimage {
-    background-image: url("/images/image-about-light.jpg");
-    flex: 0 0 30vw;
-    background-size: cover;
-    background-position: center; }
+    background-image: url("/images/image-about-light.jpg"); }
